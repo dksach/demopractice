@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jquery Hide</title>
+    <style>
+        #newp, #my{
+            padding: 5px;
+            text-align: center;
+            border: solid 1px;
+        }
+
+        #my{
+            display: none;
+        }
+
+    </style>
+    <script src="jquery.min.js"></script>
+    <script>
+       $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+       });
+
+    </script>
+</head>
+<body>
+
+    <p>If you click on the "Hide" Button, I will disapper.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="start1">Animate</button>
+
+    <div id="newp">Shide Down</div>
+    <div id="my">Huhahahahahahahah!!!!</div>
+    <br>
+    <br>
+    <div style="background: green; height: 100px; width: 100px; position: absolute;"></div>    
+    
+</body>
+</html>

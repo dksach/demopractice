@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="jquery.mean.js"></script>
+    <style>
+        
+        #panel, #flip{
+            text-align: center;
+            padding: 5px;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+    </style>
+    <script>
+       $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+       });
+    </script>
+</head>
+<body>
+    <h1 id="flip">Semester 1</h1>
+    <div id="panel"><table border="1">
+        <tr>
+            <td>S.code</td>
+            <td>Subject Name</td>
+            <td>Credit Hour</td>
+        </tr>
+        <tr>
+            <td>BIT101</td>
+            <td>C programing</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>BIT101</td>
+            <td>C programing</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>BIT101</td>
+            <td>C programing</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>BIT101</td>
+            <td>C programing</td>
+            <td>3</td>
+        </tr>
+    </table> 
+</div>   
+</body>
+</html>

@@ -1,0 +1,165 @@
+<div class="container">
+    <style>
+    #td{
+        border: 1px solid black;
+      border-collapse: collapse;
+    }
+    .nbox ul 
+    {
+        padding:10px;
+        margin:0px;
+        min-height:270px;
+    }
+    
+    .nbox li 
+    {
+        background-position:3px 6px !important;
+        margin-bottom:10px;
+        padding-left:35px
+    }
+    
+    .nbox
+    {
+        border:1px solid #ddd;
+    }
+    
+    .nbox h3 
+    {
+        background: #F9A203;
+        padding:5px;
+        color:#fff;
+        text-align:center;
+        margin-bottom:0px;
+    }
+    </style>
+    <h3>Service Plan</h3>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-sm-3">
+                <div class="nbox">
+                    <h3>Free Plan</h3>
+                    <ul>
+                        <li style="background:url(../images/checked2.png) no-repeat">Basic Information of Store including Corporate Photo/s, Google Map Registration</li>
+                        <li style="background:url(../images/checked2.png) no-repeat">Photos of Restaurant in Reference of Customers Reviews</li>
+                        <li style="background:url(../images/checked2.png) no-repeat">M Points Facility</li>
+                  </ul>
+                    
+                    <a href="<?php echo base_url('register')?>" class="btn btn-success">Register</a>
+                </div>	
+            </div>
+        
+            <div class="col-sm-3">
+                <div class="nbox">
+                    <h3>Basic Plan</h3>
+                    <ul>
+                        <li style="background:url(../images/checked2.png) no-repeat">Free Plan Include</li>
+                        <li style="background:url(../images/checked2.png) no-repeat">Visibility of Store Details (Seat Plans, Photos, Coupons)</li>
+                        <li style="background:url(../images/checked2.png) no-repeat">Menu Details (Course Menu & Other Menus)</li>
+                        <li style="background:url(../images/checked2.png) no-repeat">Customer Access Review & Monthly Visitor Report</li>
+                        
+                    </ul>
+                    <a href="<?php echo base_url('register')?>" class="btn btn-success">Register</a>
+                </div>		
+            </div>
+        
+            <div class="col-sm-3">
+                <div class="nbox">
+                    <h3>Economy Plan</h3>
+                    <ul>
+                        <li style="background:url(../images/checked2.png) no-repeat">Basic Plan Include</li>
+                        <li style="background:url(../images/checked2.png) no-repeat">Online Reservation</li>
+                    </ul>
+                    <a href="<?php echo base_url('register')?>" class="btn btn-success">Register</a>
+                </div>		
+            </div>
+        
+            <div class="col-sm-3">
+                <div class="nbox">
+                    <h3>Premium Plan</h3>
+                    <ul>
+                        <li style="background:url(../images/checked2.png) no-repeat">Economy Plan Include</li>
+                        <li style="background:url(../images/checked2.png) no-repeat">Priorities Your Store as per Your Location/Genre/Facilities</li>
+                        <li style="background:url(../images/checked2.png) no-repeat">Monthly Accounting Service (Sale & Expenses Details)</li>
+                        <li style="background:url(../images/checked2.png) no-repeat">Full Support as your Business Partner for Restaurant (B2B)</li>
+                    </ul>
+                    <a href="<?php echo base_url('register')?>" class="btn btn-success">Register</a>
+                </div>		
+            </div>
+            
+            <div class="clearfix"></div>
+            <div class="box box-info" style="display:none">
+            
+            
+            <div class="table-responsive" >
+                <table class="table table-bordered table-str">
+                <thead>
+    
+                    <tr>
+                        <th id="td" class="bg-success"><h3 style="font-weight:bold; text-align: center;line-height: 1; margin-bottom: 0px;">Features</h3>
+                        </th>
+                        <th id="td" class="bg-primary" style="text-align: center;" >Free Plan</th>
+                        <th id="td" class="bg-danger" style="text-align: center;"  >Basic Plan</th>
+                        <th id="td" class="bg-info" style="text-align: center;"  >Economy Plan</th>
+                        <th	id="td" class="bg-warning" style="text-align: center;"  >Premium Plan</th>
+                        
+                    </tr>
+                    </thead>
+                    
+                    
+                    <?php 
+                    foreach ($feature as $p)
+                    {
+                    ?>
+                    <tr>
+                    <td id="td" style="font-weight:bold"><?php echo $p['Features']?></td>
+                    <td id="td" >
+                    <?php $mod = explode(',',$p['ServicePlanId']);
+                    foreach($mod as $a){
+                        if($a == 1){
+                            echo "<i class='fa fa-check pl-30'/>";
+                            
+                        }
+                        
+                    }
+                    ?>
+                    </td>
+                    <td id="td" >
+                    <?php $mod = explode(',',$p['ServicePlanId']);
+                    foreach($mod as $a){
+                        if($a == 2){
+                            echo "<i class='fa fa-check pl-30'/>";
+                            
+                        }
+                    }
+                    ?>
+                    </td>
+                    <td id="td" >
+                    <?php $mod = explode(',',$p['ServicePlanId']);
+                    foreach($mod as $a){
+                        if($a == 3){
+                            echo "<i class='fa fa-check pl-30'/>";
+                            
+                        }
+                    }
+                    ?>
+                    </td>
+                    <td id="td" >
+                    <?php $mod = explode(',',$p['ServicePlanId']);
+                    foreach($mod as $a){
+                        if($a == 4){
+                            echo "<i class='fa fa-check pl-30'/>";
+                            
+                        }
+                    }
+                    ?>
+                    </td>
+                    </tr>
+                    <?php }?>
+                </table>
+            </div>
+        </div> 
+    </div>
+        
+    </div>		
+    </div>
+    </div>

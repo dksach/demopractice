@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <h1 id="hello"></h1>
+    <script>
+        let a = prompt("Enter a number");
+        let fact = 1;
+    for (i = 1; i <= a; i++) {
+        fact *= i;
+    }
+    document.getElementById("hello").innerHTML=fact;
+    </script> --> 
+</head>
+<body>
+    <form name=" myform" action="" method="post">
+        <label>Name:</label>
+        <input type="text" name="uname"/>
+        <label>Password</label>
+        <input type="password" name="pass" placeholder="enter your password"/>
+        <input type="submit" name="submit"/>
+    </form>
+    <script>
+        function validation(){
+            var name=myform.uname.value;
+            var password=myform.pass.value;
+            if(name=="" ){
+                window.alert("Name must be entered");
+                return false;
+            }else if(password.length<=8){
+                window.alert("Password should be more");
+                return false;
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

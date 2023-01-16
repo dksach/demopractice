@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script src="jquery.mean.js"></script>
+        <style>
+            #newp, #my{
+                padding: 5px;
+                text-align: center;
+                border: solid 1px;
+            }
+
+            #my{
+                display: none;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+            $("#hide").click(function(){
+                // $("p").hide ("slow"),function(){
+                //     alert("Now Hidden");
+                    $("p").hide(1000);
+            alert("Now Hidden");
+            });
+                $("#show").click(function(){
+                   // $("p").show();
+                   $("p").fadeIn();
+                });
+                $("#newp").click(function(){
+                    $("#my").slideDown("slow");
+                });
+
+                $("newp").click(function(){
+                    $("#my").slideUp("slow");
+                });
+
+                $("p").hover(function(){
+                    $(this).css("background-color","yellow");
+                },function(){
+                    $(this).css("background-color","pink");
+                
+                });
+            });
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("div").animate({left:'250px'});
+                });
+
+            }
+        </script>
+    </head>
+    <body>
+        <p>you can click on the "Hide" button, I will disappear.</p>
+        <button id ="hide">Hide</button>
+        <button id="show">Show</button>
+        <button id="start1">Animate</button>
+
+        <div id="newp">Slide Down</div>
+        <div id="my">bjudjjsdkdnkmsks</div>
+        <div style="background-color:green ;height: 100px;width: 100px;position: absolute;"
+
+        
+        </body>
+</html>

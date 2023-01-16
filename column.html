@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .header{
+        background-color: cornflowerblue;
+        padding: 20px;
+        text-align: center;
+    }
+    .topnav{
+        background-color: black;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+    }
+    .topnav a{
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 14px 16px;
+        float: left;
+    }
+    .topnav a:hover{
+        background-color: green;
+    }
+    .column{
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+    }
+    .row:after{
+        content:"";
+        display: table;
+        clear:both ;
+    }
+</style>
+<body>
+    <div class="header">
+        <h1>This is my header section</h1>
+    </div>
+    <div class="topnav">
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+    <a href="">News</a>
+</div>
+
+<div class="row">
+    <div class="column">
+        <img src="brp.jpg">
+        <h2>Heading</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut recusandae nemo excepturi, optio cupiditate praesentium in ad cum omnis rem, repellat harum suscipit accusantium ipsum. Expedita voluptas facere cumque modi.</p>
+    </div>
+    <div class="column">
+        <img src="brp.jpg">
+        <h2>Heading</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut recusandae nemo excepturi, optio cupiditate praesentium in ad cum omnis rem, repellat harum suscipit accusantium ipsum. Expedita voluptas facere cumque modi.</p>
+    </div>
+    
+    <div class="column">
+        <img src="brp.jpg">
+        <h2>Heading</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut recusandae nemo excepturi, optio cupiditate praesentium in ad cum omnis rem, repellat harum suscipit accusantium ipsum. Expedita voluptas facere cumque modi.</p>
+    </div>
+</div>
+</body>
+</html>
